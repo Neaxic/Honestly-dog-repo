@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Love Page</title>
+    <style>
+      body {
+        background-color: pink;
+        font-family: Arial, sans-serif;
+        color: red;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+        position: relative;
+      }
+      h1 {
+        font-size: 3em;
+      }
+      p {
+        font-size: 1.5em;
+      }
+      .main-content {
+        cursor: url("https://cur.cursors-4u.net/user/heart2.cur"), auto;
+      }
+      .heart {
+        position: absolute;
+        bottom: 0;
+        width: 50px;
+        height: 50px;
+        animation: float 5s infinite ease-in;
+      }
+      @keyframes float {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(-100vh);
+        }
+      }
+      #audio-controls {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        background: white;
+        padding: 10px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-content">
+      <h1>Til min skat, Selina</h1>
+      <p>
+        Selina, du er mit hjertes glæde, med dig ved min side, finder jeg altid
+        fred og kæde.
+      </p>
+    </div>
+    <svg
+      class="heart"
+      style="animation-delay: 1s; left: 10%"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 32 29.6"
+    >
+      <path
+        fill="red"
+        d="M16,29.6C12.4,25.9,2,15.9,2,9.8C2,5.4,5.4,2,9.8,2C13.2,2,16,4.8,16,4.8S18.8,2,22.2,2C26.6,2,30,5.4,30,9.8c0,6.1-10.4,16.1-14,19.8L16,29.6L16,29.6z"
+      />
+    </svg>
+    <svg
+      class="heart"
+      style="animation-delay: 2s; left: 30%"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 32 29.6"
+    >
+      <path
+        fill="red"
+        d="M16,29.6C12.4,25.9,2,15.9,2,9.8C2,5.4,5.4,2,9.8,2C13.2,2,16,4.8,16,4.8S18.8,2,22.2,2C26.6,2,30,5.4,30,9.8c0,6.1-10.4,16.1-14,19.8L16,29.6L16,29.6z"
+      />
+    </svg>
+    <svg
+      class="heart"
+      style="animation-delay: 3s; left: 50%"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 32 29.6"
+    >
+      <path
+        fill="red"
+        d="M16,29.6C12.4,25.9,2,15.9,2,9.8C2,5.4,5.4,2,9.8,2C13.2,2,16,4.8,16,4.8S18.8,2,22.2,2C26.6,2,30,5.4,30,9.8c0,6.1-10.4,16.1-14,19.8L16,29.6L16,29.6z"
+      />
+    </svg>
+    <svg
+      class="heart"
+      style="animation-delay: 4s; left: 70%"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 32 29.6"
+    >
+      <path
+        fill="red"
+        d="M16,29.6C12.4,25.9,2,15.9,2,9.8C2,5.4,5.4,2,9.8,2C13.2,2,16,4.8,16,4.8S18.8,2,22.2,2C26.6,2,30,5.4,30,9.8c0,6.1-10.4,16.1-14,19.8L16,29.6L16,29.6z"
+      />
+    </svg>
+    <svg
+      class="heart"
+      style="animation-delay: 5s; left: 90%"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 32 29.6"
+    >
+      <path
+        fill="red"
+        d="M16,29.6C12.4,25.9,2,15.9,2,9.8C2,5.4,5.4,2,9.8,2C13.2,2,16,4.8,16,4.8S18.8,2,22.2,2C26.6,2,30,5.4,30,9.8c0,6.1-10.4,16.1-14,19.8L16,29.6L16,29.6z"
+      />
+    </svg>
+
+    <audio id="romantic-song" src="song.mp3" autoplay loop></audio>
+    <script>
+      window.onload = function () {
+        var audio = document.getElementById("romantic-song");
+        audio.volume = 0.25; // 50% volume
+      };
+    </script>
+    <div id="audio-controls">
+      <button onclick="document.getElementById('romantic-song').pause()">
+        Pause
+      </button>
+      <button onclick="document.getElementById('romantic-song').play()">
+        Play
+      </button>
+    </div>
+  </body>
+</html>
